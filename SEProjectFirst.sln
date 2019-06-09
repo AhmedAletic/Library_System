@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEProjectLibrarySystem", "SEProjectFirst\SEProjectLibrarySystem.csproj", "{838C7C22-45F2-4A6A-89C0-D8E3BC786114}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEProjectFirst", "SEProjectFirst\SEProjectFirst.csproj", "{838C7C22-45F2-4A6A-89C0-D8E3BC786114}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEProjectFirst.Tests", "SEProjectFirst.Tests\SEProjectFirst.Tests.csproj", "{AF985C24-E630-41BE-A859-C1A127BADBF6}"
 EndProject

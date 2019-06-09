@@ -111,9 +111,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SEProjectFirst\SEProjectLibrarySystem.csproj">
+    <ProjectReference Include="..\SEProjectFirst\SEProjectFirst.csproj">
       <Project>{838C7C22-45F2-4A6A-89C0-D8E3BC786114}</Project>
-      <Name>SEProjectLibrarySystem</Name>
+      <Name>SEProjectFirst</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
