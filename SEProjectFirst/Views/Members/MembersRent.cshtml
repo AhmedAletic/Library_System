@@ -1,0 +1,58 @@
+﻿@model IEnumerable<SEProjectFirst.Models.Rent>
+
+@{
+    ViewBag.Title = "MembersRent";
+}
+
+<h2>MembersRent</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(item => item.RentID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(item => item.Member.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(item => item.Member.MembershipNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(item => item.Book.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(item => item.RentDate)
+        </th>
+        <th>Options</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RentID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Member.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Member.MembershipNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Book.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RentDate)
+            </td>
+
+        </tr>
+    }
+
+</table>
+
+<div><a href="@Url.Action("ReportMemberRents", new { id=ViewBag.ID, idF="PDF"})">Report PDF</a></div>
+<div><a href="@Url.Action("ReportMemberRents", new { id=ViewBag.ID, idF="Word"})">Report Word</a></div>
+<div><a href="@Url.Action("ReportMemberRents", new { id=ViewBag.ID, idF="Excel"})">Report Excel</a></div>

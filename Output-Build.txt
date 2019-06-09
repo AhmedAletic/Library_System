@@ -1,0 +1,5 @@
+﻿1>------ Build started: Project: SEProjectFirst, Configuration: Debug Any CPU ------
+1>  SEProjectFirst -> C:\Users\Ahmed\source\repos\SEProjectFirst\SEProjectFirst\bin\SEProjectFirst.dll
+2>------ Build started: Project: SEProjectFirst.Tests, Configuration: Debug Any CPU ------
+2>  SEProjectFirst.Tests -> C:\Users\Ahmed\source\repos\SEProjectFirst\SEProjectFirst.Tests\bin\Debug\SEProjectFirst.Tests.dll
+========== Build: 2 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

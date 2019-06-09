@@ -1,0 +1,59 @@
+﻿@model IEnumerable<SEProjectFirst.Models.Book>
+@{
+                /**/
+
+                ViewBag.Title = "AuthorsBook";
+}
+
+<h2>AuthorsBook</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(item => item.BookID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(item => item.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(item => item.Year)
+        </th>
+        <th>
+            @Html.DisplayNameFor(item => item.NumOfPages)
+        </th>
+        <th>
+            @Html.DisplayNameFor(item => item.Author.Name)
+        </th>
+        <th>Options</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumOfPages)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Author.Name)
+            </td>
+
+        </tr>
+    }
+
+</table>
+
+<div><a href="@Url.Action("ReportAuthorBooks", new { id=ViewBag.ID, idF="PDF"})">Report PDF</a></div>
+<div><a href="@Url.Action("ReportAuthorBooks", new { id=ViewBag.ID, idF="Word"})">Report Word</a></div>
+<div><a href="@Url.Action("ReportAuthorBooks", new { id=ViewBag.ID, idF="Excel"})">Report Excel</a></div>
